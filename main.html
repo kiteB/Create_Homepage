@@ -5,11 +5,20 @@
     <title>순정</title>
 
     <style>
-      .title {
+      #title {
         text-align: center;
+        margin-top: 30px;
       }
       body {
-        width: 500px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      #site_map {
+        background-color: rgba(90, 207, 43, 0.3);
+        border-radius: 10%;
+        float: left;
+        width: 450px;
+        height: 450px;
         margin: 10px auto;
         text-align: center;
       }
@@ -35,6 +44,13 @@
         float: right;
         width: 200px;
       }
+      fieldset {
+        background-color: rgba(73, 73, 73, 0.3);
+        text-align: center;
+        width: 250px;
+        height: 130px;
+        float: right;
+      }
     </style>
   </head>
 
@@ -42,67 +58,86 @@
     <div id="title">
       <h1><b>순정;</b></h1>
       <h2>순천향대학교 정보 알리미</h2>
-      <h3>사이트맵</h3>
     </div>
     <br />
     <hr />
 
-    <div id="line_1">
-      <div id="sch">
-        <h3>순천향대학교 정보</h3>
+    <div id="site_map">
+      <h2><b>사이트맵</b></h2>
+      <div id="line_1">
+        <div id="sch">
+          <h3>순천향대학교 정보</h3>
 
-        <a href="sch/university.html">학교 소개</a>
-        <br />
-        <a href="sch/campus_map.html">캠퍼스 맵</a>
-        <br />
-        <a href="sch/building_info.html">건물 정보</a>
-        <br />
+          <a href="sch/university.html">학교 소개</a>
+          <br />
+          <a href="sch/campus_map.html">캠퍼스 맵</a>
+          <br />
+          <a href="sch/building_info.html">건물 정보</a>
+          <br />
+        </div>
+
+        <div id="info">
+          <h3>주변 정보</h3>
+          <a href="surrounding_info/restaurant.html">음식점</a>
+          <br />
+          <a href="surrounding_info/cafe.html">카페</a>
+          <br />
+          <a href="surrounding_info/bar.html">술집</a>
+          <br />
+          <a href="surrounding_info/hospital.html">병원</a>
+          <br />
+          <a href="surrounding_info/etc_place.html">기타</a>
+          <br />
+        </div>
       </div>
 
-      <div id="info">
-        <h3>주변 정보</h3>
-        <a href="surrounding_info/restaurant.html">음식점</a>
-        <br />
-        <a href="surrounding_info/cafe.html">카페</a>
-        <br />
-        <a href="surrounding_info/bar.html">술집</a>
-        <br />
-        <a href="surrounding_info/hospital.html">병원</a>
-        <br />
-        <a href="surrounding_info/etc_place.html">기타</a>
-        <br />
+      <div id="line_2">
+        <div id="room">
+          <h3>자취방 정보</h3>
+
+          <a href="room/zone1.html">1구역</a>
+          <br />
+          <a href="room/zone2.html">2구역</a>
+          <br />
+          <a href="room/zone3.html">3구역</a>
+          <br />
+          <a href="room/zone4.html">4구역</a>
+          <br />
+          <a href="room/other_zone.html">기타 구역</a>
+          <br />
+        </div>
+
+        <div id="community">
+          <h3>커뮤니티</h3>
+
+          <a href="community/bulletin_board.html">자유 게시판</a>
+          <br />
+          <a href="community/info_board.html">정보 게시판</a>
+          <br />
+          <a href="community/room_board.html">자취방</a>
+          <br />
+          <a href="community/hot_board.html">HOT 게시판</a>
+          <br />
+        </div>
       </div>
     </div>
-    <hr />
 
-    <div id="line_2">
-      <div id="room">
-        <h3>자취방 정보</h3>
-
-        <a href="room/zone1.html">1구역</a>
+    <form>
+      <fieldset>
+        <table>
+          <legend>Login</legend>
+          <tr>
+            <td><label for="username">아이디</label></td>
+            <td><input id="username" type="text" name="username" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">비밀번호</label></td>
+            <td><input id="password" type="password" name="password" /></td>
+          </tr>
+        </table>
         <br />
-        <a href="room/zone2.html">2구역</a>
-        <br />
-        <a href="room/zone3.html">3구역</a>
-        <br />
-        <a href="room/zone4.html">4구역</a>
-        <br />
-        <a href="room/other_zone.html">기타 구역</a>
-        <br />
-      </div>
-
-      <div id="community">
-        <h3>커뮤니티</h3>
-
-        <a href="community/bulletin_board.html">자유 게시판</a>
-        <br />
-        <a href="community/info_board.html">정보 게시판</a>
-        <br />
-        <a href="community/room_board.html">자취방</a>
-        <br />
-        <a href="community/hot_board.html">HOT 게시판</a>
-        <br />
-      </div>
-    </div>
+        <button type="submit" disabled="disabled">로그인</button>
+      </fieldset>
+    </form>
   </body>
 </html>
