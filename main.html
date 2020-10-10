@@ -5,7 +5,7 @@
     <title>순정</title>
 
     <style>
-      #title {
+      .title {
         text-align: center;
         margin-top: 30px;
       }
@@ -13,114 +13,102 @@
         margin-left: 100px;
         margin-right: 100px;
       }
-      #site_map {
-        background-color: rgba(90, 207, 43, 0.3);
-        border-radius: 10%;
+      .gnb {
+        background-color: lightgray;
+        float: center;
+        margin-top: 3%;
+        padding-top: 8px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      li {
+        list-style-type: none;
         float: left;
-        width: 450px;
-        height: 450px;
-        margin: 10px auto;
+        padding-left: 16px;
+      }
+      a {
+        text-decoration: none;
+      }
+      #container {
+        float: center;
         text-align: center;
       }
-      #line_1 {
-        overflow: hidden;
-      }
-      #sch {
-        float: left;
-        width: 200px;
-      }
-      #info {
+      form {
         float: right;
-        width: 200px;
-      }
-      #line_2 {
-        overflow: hidden;
-      }
-      #room {
-        float: left;
-        width: 200px;
-      }
-      #community {
-        float: right;
-        width: 200px;
       }
       fieldset {
         background-color: rgba(73, 73, 73, 0.3);
         text-align: center;
         width: 250px;
         height: 130px;
-        float: right;
       }
+
     </style>
   </head>
 
   <body>
-    <div id="title">
-      <h1><b>순정;</b></h1>
-      <h2>순천향대학교 정보 알리미</h2>
-    </div>
-    <br />
-    <hr />
-
-    <div id="site_map">
-      <h2><b>사이트맵</b></h2>
-      <div id="line_1">
-        <div id="sch">
-          <h3>순천향대학교 정보</h3>
-
-          <a href="sch/university.html">학교 소개</a>
-          <br />
-          <a href="sch/campus_map.html">캠퍼스 맵</a>
-          <br />
-          <a href="sch/building_info.html">건물 정보</a>
-          <br />
-        </div>
-
-        <div id="info">
-          <h3>주변 정보</h3>
-          <a href="surrounding_info/restaurant.html">음식점</a>
-          <br />
-          <a href="surrounding_info/cafe.html">카페</a>
-          <br />
-          <a href="surrounding_info/bar.html">술집</a>
-          <br />
-          <a href="surrounding_info/hospital.html">병원</a>
-          <br />
-          <a href="surrounding_info/etc_place.html">기타</a>
-          <br />
-        </div>
+    <div id="header">
+      <!-- Logo -->
+      <div class="title">
+        <h1><b>순정;</b></h1>
+        <h2>순천향대학교 정보 알리미</h2>
       </div>
 
-      <div id="line_2">
-        <div id="room">
-          <h3>자취방 정보</h3>
-
-          <a href="room/zone1.html">1구역</a>
-          <br />
-          <a href="room/zone2.html">2구역</a>
-          <br />
-          <a href="room/zone3.html">3구역</a>
-          <br />
-          <a href="room/zone4.html">4구역</a>
-          <br />
-          <a href="room/other_zone.html">기타 구역</a>
-          <br />
-        </div>
-
-        <div id="community">
-          <h3>커뮤니티</h3>
-
-          <a href="community/bulletin_board.html">자유 게시판</a>
-          <br />
-          <a href="community/info_board.html">정보 게시판</a>
-          <br />
-          <a href="community/room_board.html">자취방</a>
-          <br />
-          <a href="community/hot_board.html">HOT 게시판</a>
-          <br />
-        </div>
+      <!-- navigation bar -->
+      <div class="container">
+        <ul class="gnb">
+          <li class="nav_item">
+            <a href="sch/university.html">순천향대학교 정보 </a>
+          </li>
+          <li class="nav_item">
+            <a href="surrounding_info/restaurant.html">주변 정보</a>
+          </li>
+          <li class="nav_item">
+            <a href="room/zone1.html">자취방 정보</a>
+          </li>
+          <li class="nav_item">
+            <a href="community/bulletin_board.html">커뮤니티</a>
+          </li>
+        </ul>
+        <li></li>
       </div>
     </div>
+
+    <div id="container">
+
+      <h2>10월 학사 일정</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>날짜</th>
+            <th>일정명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5~12</td>
+            <td>전공심화/복수전공 신청(3차)</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>한글날(공휴일)</td>
+          </tr>
+          <tr>
+            <td>19~23</td>
+            <td>2020학년도 2학기 중간평가</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>2021학년도 1학기 복학 안내문 발송</td>
+          </tr>
+          <tr>
+            <td>26~30</td>
+            <td>자기(주도)설계 전공 신청</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
 
     <form>
       <fieldset>
@@ -139,5 +127,7 @@
         <button type="submit" disabled="disabled">로그인</button>
       </fieldset>
     </form>
+
+    </div>
   </body>
 </html>
