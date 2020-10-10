@@ -10,8 +10,8 @@
         margin-top: 30px;
       }
       body {
-        margin-left: 100px;
-        margin-right: 100px;  
+        margin-left: 150px;
+        margin-right: 150px;
       }
       .gnb {
         background-color: lightgray;
@@ -34,7 +34,11 @@
         float: center;
         text-align: center;
       }
+      .calendar {
+        float: left;
+      }
       form {
+        margin-top: 30px;
         float: right;
       }
       fieldset {
@@ -43,7 +47,6 @@
         width: 250px;
         height: 130px;
       }
-
     </style>
   </head>
 
@@ -71,63 +74,61 @@
             <a href="community/bulletin_board.html">커뮤니티</a>
           </li>
         </ul>
-        <li></li>
       </div>
     </div>
 
     <div id="container">
-
-      <h2>10월 학사 일정</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>날짜</th>
-            <th>일정명</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>5~12</td>
-            <td>전공심화/복수전공 신청(3차)</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>한글날(공휴일)</td>
-          </tr>
-          <tr>
-            <td>19~23</td>
-            <td>2020학년도 2학기 중간평가</td>
-          </tr>
-          <tr>
-            <td>23</td>
-            <td>2021학년도 1학기 복학 안내문 발송</td>
-          </tr>
-          <tr>
-            <td>26~30</td>
-            <td>자기(주도)설계 전공 신청</td>
-          </tr>
-        </tbody>
-      </table>
-    </article>
-
-    <form>
-      <fieldset>
-        <table>
-          <legend>Login</legend>
-          <tr>
-            <td><label for="username">아이디</label></td>
-            <td><input id="username" type="text" name="username" /></td>
-          </tr>
-          <tr>
-            <td><label for="password">비밀번호</label></td>
-            <td><input id="password" type="password" name="password" /></td>
-          </tr>
+      <div class="calendar">
+        <h2>10월 학사 일정</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>날짜</th>
+              <th>일정명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>5~12</td>
+              <td>전공심화/복수전공 신청(3차)</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>한글날(공휴일)</td>
+            </tr>
+            <tr>
+              <td>19~23</td>
+              <td>2020학년도 2학기 중간평가</td>
+            </tr>
+            <tr>
+              <td>23</td>
+              <td>2021학년도 1학기 복학 안내문 발송</td>
+            </tr>
+            <tr>
+              <td>26~30</td>
+              <td>자기(주도)설계 전공 신청</td>
+            </tr>
+          </tbody>
         </table>
-        <br />
-        <button type="submit" disabled="disabled">로그인</button>
-      </fieldset>
-    </form>
-
+      </div>
+      <img src="sch/sch.jpg" width="400" />
+      <form>
+        <fieldset>
+          <table>
+            <legend>Login</legend>
+            <tr>
+              <td><label for="username">아이디</label></td>
+              <td><input id="username" type="text" name="username" /></td>
+            </tr>
+            <tr>
+              <td><label for="password">비밀번호</label></td>
+              <td><input id="password" type="password" name="password" /></td>
+            </tr>
+          </table>
+          <br />
+          <button type="submit" disabled="disabled">로그인</button>
+        </fieldset>
+      </form>
     </div>
   </body>
 </html>
