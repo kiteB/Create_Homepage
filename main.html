@@ -5,7 +5,7 @@
     <title>순정</title>
 
     <style>
-      .title {
+      #header {
         text-align: center;
         margin-top: 30px;
       }
@@ -14,7 +14,7 @@
         margin-right: 150px;
       }
       .gnb {
-        background-color: lightgray;
+        background-color: rgba(130, 187, 45, 0.603);
         float: center;
         margin-top: 3%;
         padding-top: 8px;
@@ -35,11 +35,26 @@
         text-align: center;
       }
       .calendar {
+        position: relative;
         float: left;
       }
-      form {
+      .test {
+        position: relative;
+      }
+      .form {
         margin-top: 30px;
         float: right;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      #sidebar {
+        position: fixed;
+        top: 260px;
+        right: 150px;
+        bottom: 0;
+        padding: 0;
       }
       fieldset {
         background-color: rgba(73, 73, 73, 0.3);
@@ -77,7 +92,9 @@
       </div>
     </div>
 
+    <!-- 내용 -->
     <div id="container">
+      <!-- 학사 일정 -->
       <div class="calendar">
         <h2>10월 학사 일정</h2>
         <table border="1">
@@ -111,7 +128,12 @@
           </tbody>
         </table>
       </div>
-      <img src="sch/sch.jpg" width="400" />
+      <div class="test">
+        <img src="sch/sch.jpg" width="700" />
+      </div>
+    </div>
+
+    <div id="sidebar">
       <form>
         <fieldset>
           <table>
@@ -126,7 +148,7 @@
             </tr>
           </table>
           <br />
-          <button type="submit" disabled="disabled">로그인</button>
+          <input type="submit" alt="로그인" value="로그인" />
         </fieldset>
       </form>
     </div>
