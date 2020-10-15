@@ -3,159 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <title>순정</title>
+    <!-- viewport 설정 -->
+    <meta name="순정" content="user-scalable=no, initial-scale=1" />
 
     <style>
-      #header {
-        text-align: center;
-        margin-top: 30px;
-      }
       body {
-        margin-left: 150px;
-        margin-right: 150px;
+        margin: 0;
+        display: block;
+        font-family: 나눔스퀘어;
       }
-      .gnb {
-        background-color: rgba(130, 187, 45, 0.603);
-        float: center;
-        margin-top: 3%;
-        padding-top: 8px;
-        padding-bottom: 30px;
-        padding-left: 0px;
-        padding-right: 0px;
+      header {
+        text-align: center;
+      }
+      header .main_header {
+        padding: 20px;
+        padding-bottom: 0;
+        margin: auto;
+      }
+      header .main_header > * {
+        display: inline-block;
+        vertical-align: middle;
       }
       li {
         list-style-type: none;
         float: left;
-        padding-left: 16px;
+        padding-left: 30px;
+      }
+      header .navigation {
+        width: 100%;
+        padding: 35px;
+        padding-top: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 50px;
+        background-color: rgba(200, 229, 145, 0.534);
+      }
+
+      header .navigation ul.nav {
+        position: relative;
+        text-transform: none;
+      }
+      header .navigation ul.nav li.nav_item {
+        position: relative;
+        float: left;
+        padding-left: ;
       }
       a {
         text-decoration: none;
-      }
-      #container {
-        z-index: 5;
-        margin 25px auto 0 auto;
-        width: 1023px;
-        zoom: 1;
-        float: center;
-        text-align: center;
-      }
-      .calendar {
-        position: relative;
-        float: left;
-      }
-      .test {
-        position: relative;
-      }
-      .form {
-        margin-top: 30px;
-        float: right;
-      }
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-      #aside {
-        position: fixed;
-        float: right;
-        top: 260px;
-        right: 150px;
-        bottom: 0;
-        padding: 0;
-      }
-      fieldset {
-        background-color: rgba(73, 73, 73, 0.3);
-        text-align: center;
-        width: 250px;
-        height: 130px;
       }
     </style>
   </head>
 
   <body>
-    <div id="header">
-      <!-- Logo -->
-      <div class="title">
-        <h1><b>순정;</b></h1>
-        <h2>순천향대학교 정보 알리미</h2>
-      </div>
+    <div id="main">
+      <!-- header -->
+      <header>
+        <div class="main_header">
+          <!-- Logo -->
+          <div class="Logo">
+            <img src="Logo.png" width="250" height="150" />
+          </div>
+        </div>
 
-      <!-- navigation bar -->
-      <div class="container">
-        <ul class="gnb">
-          <li class="nav_item">
-            <a href="sch/university.html">순천향대학교 정보 </a>
-          </li>
-          <li class="nav_item">
-            <a href="surrounding_info/restaurant.html">주변 정보</a>
-          </li>
-          <li class="nav_item">
-            <a href="room/zone1.html">자취방 정보</a>
-          </li>
-          <li class="nav_item">
-            <a href="community/bulletin_board.html">커뮤니티</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 내용 -->
-    <div id="container">
-      <!-- 학사 일정 -->
-      <div class="calendar">
-        <h2>10월 학사 일정</h2>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>날짜</th>
-              <th>일정명</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>5~12</td>
-              <td>전공심화/복수전공 신청(3차)</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>한글날(공휴일)</td>
-            </tr>
-            <tr>
-              <td>19~23</td>
-              <td>2020학년도 2학기 중간평가</td>
-            </tr>
-            <tr>
-              <td>23</td>
-              <td>2021학년도 1학기 복학 안내문 발송</td>
-            </tr>
-            <tr>
-              <td>26~30</td>
-              <td>자기(주도)설계 전공 신청</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="test">
-        <img src="sch/sch.jpg" width="700" />
-      </div>
-    </div>
-
-    <div id="aside">
-      <form>
-        <fieldset>
-          <table>
-            <legend>Login</legend>
-            <tr>
-              <td><label for="username">아이디</label></td>
-              <td><input id="username" type="text" name="username" /></td>
-            </tr>
-            <tr>
-              <td><label for="password">비밀번호</label></td>
-              <td><input id="password" type="password" name="password" /></td>
-            </tr>
-          </table>
-          <br />
-          <input type="submit" alt="로그인" value="로그인" />
-        </fieldset>
-      </form>
+        <!-- navigation bar -->
+        <div class="navigation">
+          <ul class="nav">
+            <li class="nav_item">
+              <a href="sch/university.html">순천향대학교 정보 </a>
+            </li>
+            <li class="nav_item">
+              <a href="surrounding_info/restaurant.html">주변 정보</a>
+            </li>
+            <li class="nav_item">
+              <a href="room/zone1.html">자취방 정보</a>
+            </li>
+            <li class="nav_item">
+              <a href="community/bulletin_board.html">커뮤니티</a>
+            </li>
+          </ul>
+        </div>
+      </header>
     </div>
   </body>
 </html>
