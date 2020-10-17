@@ -15,21 +15,17 @@
       header {
         text-align: center;
       }
-      header .main_header {
+      .main_header {
         padding: 20px;
         padding-bottom: 0;
         margin: auto;
       }
-      header .main_header > * {
+      .main_header > * {
         display: inline-block;
         vertical-align: middle;
       }
-      li {
-        list-style-type: none;
-        float: left;
-        padding-left: 30px;
-      }
-      header .navigation {
+      .navigation {
+        font-weight: 700;
         width: 100%;
         padding: 35px;
         padding-top: 1px;
@@ -39,18 +35,103 @@
         padding-left: 50px;
         background-color: rgba(200, 229, 145, 0.534);
       }
-
-      header .navigation ul.nav {
+      h2 {
+        text-align: left;
+        padding-left: 100px;
+      }
+      .a {
+        border-collapse: collapse;
+        padding: 10px;
+        border: 1px solid #333333;
+      }
+      th {
+        padding: 10px;
+        border: 1px solid #333333;
+      }
+      td {
+        padding: 10px;
+        border: 1px solid #333333;
+      }
+      ul.nav {
         position: relative;
         text-transform: none;
       }
-      header .navigation ul.nav li.nav_item {
-        position: relative;
+      li.nav_item {
+        list-style-type: none;
         float: left;
-        padding-left: ;
+        padding-left: 30px;
+      }
+      li.nav_item::before {
+        content: "|";
+        padding-right: 20px;
+        color: darkgray;
+      }
+      li.nav_item:first-child::before {
+        content: none;
       }
       a {
         text-decoration: none;
+      }
+      div {
+        display: block;
+      }
+      .main_container {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .row {
+        width: 70%;
+        height: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgba(219, 215, 215, 0.411);
+        border-radius: 20px;
+      }
+      .content {
+        min-height: 250px;
+      }
+      .main-slide {
+        padding-top: 20px;
+        text-align: center;
+      }
+      .container {
+        width: 970px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .container::before {
+        display: table;
+        content: " ";
+      }
+      .container::after {
+        clear: both;
+      }
+      .main_icon {
+        background: cyan;
+        height: 100%;
+        margin-bottom: 20px;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .main-link-wrap {
+        float: center;
+        width: 50%;
+      }
+      .main-link-wrap ul {
+        list-style: none;
+        padding: 0;
+      }
+      .main-link-wrap li {
+        float: left;
+        padding: 30px;
+        margin-bottom: 10px;
       }
     </style>
   </head>
@@ -84,6 +165,79 @@
           </ul>
         </div>
       </header>
+
+      <!-- main_container-->
+      <div class="main_container">
+        <div class="row">
+          <div class="content">
+            <div class="main-slide">
+              <div class="container">
+                <div class="calendar">
+                  <h2>10월 학사 일정</h2>
+                  <table class="a">
+                    <thead>
+                      <tr>
+                        <th>날짜</th>
+                        <th>일정명</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>5~12</td>
+                        <td>전공심화/복수전공 신청(3차)</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>한글날(공휴일)</td>
+                      </tr>
+                      <tr>
+                        <td>19~23</td>
+                        <td>2020학년도 2학기 중간평가</td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td>2021학년도 1학기 복학 안내문 발송</td>
+                      </tr>
+                      <tr>
+                        <td>26~30</td>
+                        <td>자기(주도)설계 전공 신청</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- icon -->
+            <div class="main-icon">
+              <div class="container">
+                <div class="main-link-wrap">
+                  <br />
+                  <br />
+                  <h2>바로가기 사이트</h2>
+                  <ul>
+                    <li>
+                      <a href="https://homepage.sch.ac.kr/sch/index.jsp"
+                        >순천향대학교 홈페이지</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://portal.sch.ac.kr/p/index.jsp"
+                        >순천향대학교 portal</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://cyber.sch.ac.kr/ko/"
+                        >순천향대학교 학습플랫폼(LMS)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
