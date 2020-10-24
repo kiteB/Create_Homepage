@@ -1,173 +1,57 @@
 <!DOCTYPE html>
-
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>순천향대학교 정보</title>
-    
+    <meta charset="UTF-8" />
+    <title>순정</title>
     <!-- viewport 설정 -->
     <meta name="순정" content="user-scalable=no, initial-scale=1" />
     <!-- CSS 파일-->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="surrounding_style.css" />
   </head>
 
   <body>
-    <div class="box">
-      <div class="Logo">
-        <a href="../index.html">
-          <img src="../Logo.png" width="250" height="150" />
-        </a>
+    <div id="main">
+      <!-- header -->
+      <header>
+        <div class="main_header">
+          <!-- Logo -->
+          <div class="Logo">
+            <a href="../index.html">
+              <img src="../Logo.png" width="250" height="150" />
+            </a>
+          </div>
+        </div>
+
+        <!-- navigation bar -->
+        <div class="navigation">
+          <ul class="nav">
+            <li class="nav_item">
+              <a href="../sch/university.html">순천향대학교 정보 </a>
+            </li>
+            <li class="nav_item">
+              <a href="../surrounding_info/restaurant.html">주변 정보</a>
+            </li>
+            <li class="nav_item">
+              <a href="../community/community.html">커뮤니티</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- main_container-->
+      <div class="main_container">
+        <div class="row">
+          <div class="content">
+            <div class="main-slide">
+              <div class="container">
+                <div class="calendar">
+                  <h2>식당</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul>
-        <!-- 순천향대학교 정보 -->
-        <h3>순천향대학교 정보</h3>
-        <ol>
-          <a href="../sch/university.html">학교 소개</a>
-          <br />
-          <a href="../sch/campus_map.html">캠퍼스 맵</a>
-          <br />
-          <a href="../sch/building_info.html">건물 정보</a>
-          <br />
-        </ol>
-
-        <!-- 주변 정보 -->
-        <h3>주변 정보</h3>
-        <ol>
-          <a href="../surrounding_info/restaurant.html" style="color: red"
-            ><b>음식점</b></a
-          >
-          <br />
-          <a href="../surrounding_info/cafe.html">카페</a>
-          <br />
-          <a href="../surrounding_info/bar.html">술집</a>
-          <br />
-          <a href="../surrounding_info/hospital.html">병원</a>
-          <br />
-          <a href="../surrounding_info/etc_place.html">기타</a>
-          <br />
-        </ol>
-        <!-- 자취방 정보 -->
-        <h3>자취방 정보</h3>
-        <ol>
-          <a href="../room/zone1.html">1구역</a>
-          <br />
-          <a href="../room/zone2.html">2구역</a>
-          <br />
-          <a href="../room/zone3.html">3구역</a>
-          <br />
-          <a href="../room/zone4.html">4구역</a>
-          <br />
-          <a href="../room/other_zone.html">기타 구역</a>
-          <br />
-        </ol>
-        <!-- 커뮤니티 -->
-        <h3>커뮤니티</h3>
-        <ol>
-          <a href="../community/bulletin_board.html">자유 게시판</a>
-          <br />
-          <a href="../community/info_board.html">정보 게시판</a>
-          <br />
-          <a href="../community/room_board.html">자취방</a>
-          <br />
-          <a href="../community/hot_board.html">HOT 게시판</a>
-          <br />
-        </ol>
-      </ul>
-    </div>
-
-    <div class="text">
-      <br />
-      <h1>음식점</h1>
-      <br />
-      <ol>
-        <li>고기류</li>
-        <ul>
-          <li>1구역</li>
-          <li>계경</li>
-          <li>궁중화로</li>
-          <li>꼴두바우</li>
-          <li>돈가네</li>
-          <li>돈킹</li>
-          <li>마포숯불갈비</li>
-          <li>북촌갈비</li>
-          <li>소 한마리 몽땅 무쏘</li>
-          <li>엄마손삼겹살</li>
-          <li>온달갈비</li>
-          <li>일미닭갈비</li>
-          <li>춘천명동닭갈비</li>
-          <li>콩불먹으면 돼지</li>
-          <li>형님저예요</li>
-        </ul>
-        <br />
-        <li>한식</li>
-        <ul>
-          <li>24시 한뚝수육국밥</li>
-          <li>돼지고기김치찌개</li>
-          <li>모박사부대찌개</li>
-          <li>배부장찌개</li>
-          <li>순천지</li>
-          <li>은성식당</li>
-          <li>자유식당</li>
-          <li>쪼다</li>
-          <li>큰맘 할매 순대국</li>
-          <li>푸짐한밥상</li>
-        </ul>
-        <br />
-        <li>간편식</li>
-        <ul>
-          <li>도스마스</li>
-          <li>밀플랜비</li>
-          <li>봉구스 밥버거</li>
-          <li>토마토도시락</li>
-          <li>한솥도시락</li>
-        </ul>
-        <br />
-        <li>분식</li>
-        <ul>
-          <li>만득이네</li>
-          <li>신전떡볶이</li>
-          <li>빨봉분식</li>
-          <li>얌샘김밥</li>
-          <li>천원국수</li>
-        </ul>
-        <br />
-        <li>중식</li>
-        <ul>
-          <li>대동북</li>
-          <li>중국집</li>
-          <li>진시왕</li>
-        </ul>
-        <br />
-        <li>햄버거</li>
-        <ul>
-          <li>롯데리아</li>
-          <li>맘스터치</li>
-        </ul>
-        <br>
-        <li>치킨/피자</li>
-        <ul>
-          <li>썬오브비앤피</li>
-          <li>오구쌀피자</li>
-          <li>허니팟 옛날통닭</li>
-        </ul>
-        <br />
-        <li>족발/보쌈</li>
-        <ul>
-          <li>신창족발</li>
-          <li>온양왕족발보쌈</li>
-          <li>장충동할머니족발보쌈</li>
-        </ul>
-        <br />
-        <li>기타</li>
-        <ul>
-          <li>국제밀면</0li0>
-          <li>밀터칼국수</li>
-          <li>자라쿠라멘</li>
-          <li>최고당 돈까스</li>
-          <li>카바레 식당</li>
-          <li>행복한돈가스</li>
-        </ul>
-      </ol>
     </div>
   </body>
 </html>
