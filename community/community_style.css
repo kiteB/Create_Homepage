@@ -26,10 +26,6 @@ header {
   padding-left: 50px;
   background-color: rgba(200, 229, 145, 0.534);
 }
-h2 {
-  text-align: left;
-  padding-left: 100px;
-}
 .a {
   border-collapse: collapse;
   padding: 10px;
@@ -73,54 +69,13 @@ div {
   margin-right: auto;
   margin-left: auto;
 }
-.row {
-  width: 70%;
+.content {
+  width: 80%;
   height: 700px;
+  text-align: center;
+  padding-top: 20px;
   margin-right: auto;
   margin-left: auto;
   background-color: rgba(219, 215, 215, 0.411);
   border-radius: 20px;
-}
-.content {
-  min-height: 250px;
-}
-.main-slide {
-  padding-top: 20px;
-  text-align: center;
-}
-.container {
-  width: 970px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container::before {
-  display: table;
-  content: " ";
-}
-.container::after {
-  clear: both;
-}
-.main_icon {
-  background: cyan;
-  height: 100%;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.main-link-wrap {
-  float: center;
-  width: 50%;
-}
-.main-link-wrap ul {
-  list-style: none;
-  padding: 0;
-}
-.main-link-wrap li {
-  float: left;
-  padding: 30px;
-  margin-bottom: 10px;
 }

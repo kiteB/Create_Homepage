@@ -2,6 +2,7 @@ body {
   margin: 0;
   display: block;
   font-family: 나눔스퀘어;
+  text-align: center;
 }
 header {
   text-align: center;
@@ -14,6 +15,13 @@ header {
 .main_header > * {
   display: inline-block;
   vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .navigation {
   font-weight: 700;
