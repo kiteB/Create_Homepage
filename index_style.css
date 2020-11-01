@@ -16,32 +16,71 @@ header {
   display: inline-block;
   vertical-align: middle;
 }
-ul {
+nav {
+  font-weight: 700;
+  width: 100%;
+  padding: 50px;
+  padding-top: 10px;
+  padding-left: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  background-color: rgba(200, 229, 145, 0.534);
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+#main-menu > li {
+  float: left;
+  position: relative;
+}
+#main-menu > li > a {
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 10px 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+#main-menu > li:nth-child(1) > a {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+/* sub menu */
+#sub-menu {
+  position: absolute;
+  background: rgb(212, 228, 184);
+  visibility: hidden;
+  transition: all 0.1s ease-in;
+}
+#sub-menu > li {
+  padding: 10px 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#sub-menu > li > a {
+  font-weight: 800;
+  color: rgba(30, 53, 0, 0.6);
+  text-decoration: none;
+}
+
+#main-menu > li:hover #sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#sub-menu > li > a:hover {
+  color: rgb(251, 255, 0);
 }
 a {
   text-decoration: none;
   color: inherit;
 }
-.navigation {
-  font-weight: 700;
-  width: 100%;
-  padding: 35px;
-  padding-top: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15px;
-  padding-left: 50px;
-  background-color: rgba(200, 229, 145, 0.534);
-}
 h2 {
   text-align: left;
   padding-left: 100px;
-}
-.a {
-  border-collapse: collapse;
-  padding: 10px;
-  border: 1px solid #333333;
 }
 th {
   padding: 10px;
@@ -50,26 +89,6 @@ th {
 td {
   padding: 10px;
   border: 1px solid #333333;
-}
-ul.nav {
-  position: relative;
-  text-transform: none;
-}
-li.nav_item {
-  list-style-type: none;
-  float: left;
-  padding-left: 30px;
-}
-li.nav_item::before {
-  content: "|";
-  padding-right: 20px;
-  color: darkgray;
-}
-li.nav_item:first-child::before {
-  content: none;
-}
-a {
-  text-decoration: none;
 }
 div {
   display: block;
@@ -118,17 +137,4 @@ div {
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-.main-link-wrap {
-  float: center;
-  width: 50%;
-}
-.main-link-wrap ul {
-  list-style: none;
-  padding: 0;
-}
-.main-link-wrap li {
-  float: left;
-  padding: 30px;
-  margin-bottom: 10px;
 }
