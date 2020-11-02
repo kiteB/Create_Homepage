@@ -104,7 +104,8 @@ div {
 }
 .row {
   width: 70%;
-  height: 700px;
+  height: auto;
+  padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   background-color: rgba(219, 215, 215, 0.411);

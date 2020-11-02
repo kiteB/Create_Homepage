@@ -86,9 +86,10 @@ div {
 }
 .content {
   width: 80%;
-  height: 700px;
+  height: auto;
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   background-color: rgba(219, 215, 215, 0.411);
