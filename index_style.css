@@ -59,18 +59,15 @@ li {
   padding: 10px 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-
 #sub-menu > li > a {
   font-weight: 800;
   color: rgba(30, 53, 0, 0.6);
   text-decoration: none;
 }
-
 #main-menu > li:hover #sub-menu {
   opacity: 1;
   visibility: visible;
 }
-
 #sub-menu > li > a:hover {
   color: rgb(251, 255, 0);
 }
@@ -81,6 +78,11 @@ a {
 h2 {
   text-align: left;
   padding-left: 100px;
+}
+table {
+  border: 1px solid #444444;
+  border-collapse: collapse;
+  margin-top: 5%;
 }
 th {
   padding: 10px;

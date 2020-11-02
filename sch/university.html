@@ -14,6 +14,14 @@
         margin-left: 10%;
         margin-top: 5%;
       }
+      th {
+        padding: 10px;
+        border: 1px solid #333333;
+      }
+      td {
+        padding: 10px;
+        border: 1px solid #333333;
+      }
       td:nth-child(2n + 1) {
         font-weight: 700;
         background-color: rgba(184, 224, 109, 0.356);
@@ -40,19 +48,44 @@
         </div>
 
         <!-- navigation bar -->
-        <div class="navigation">
-          <ul class="nav">
+        <nav role="navigation">
+          <ul id="main-menu">
             <li class="nav_item">
-              <a href="../sch/university.html">순천향대학교 정보 </a>
+              <a href="../sch/university.html">학교 정보</a>
+              <ul id="sub-menu">
+                <li>
+                  <a href="../sch/campus_map.html">캠퍼스 맵</a>
+                </li>
+                <li>
+                  <a href="../sch/building_info.html">건물 정보</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_item">
               <a href="../surrounding_info/restaurant.html">주변 정보</a>
+              <ul id="sub-menu">
+                <li>
+                  <a href="../surrounding_info/restaurant.html">식당</a>
+                </li>
+                <li>
+                  <a href="../surrounding_info/cafe.html">카페</a>
+                </li>
+                <li>
+                  <a href="../surrounding_info/bar.html">술집</a>
+                </li>
+                <li>
+                  <a href="../surrounding_info/hospital.html">병원/약국</a>
+                </li>
+                <li>
+                  <a href="../surrounding_info/etc_place.html">기타</a>
+                </li>
+              </ul>
             </li>
             <li class="nav_item">
               <a href="../community/community.html">커뮤니티</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </header>
 
       <!-- main_container-->
