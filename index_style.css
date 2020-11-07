@@ -75,9 +75,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-h2 {
+#calendar {
   text-align: left;
-  padding-left: 100px;
+  padding-left: 150px;
 }
 table {
   border: 1px solid #444444;
