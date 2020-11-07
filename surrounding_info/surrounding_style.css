@@ -95,3 +95,9 @@ div {
   background-color: rgba(219, 215, 215, 0.411);
   border-radius: 20px;
 }
+.button {
+  background-color: white;
+  border: 1px solid yellowgreen;
+  padding: 5px;
+  border-radius: 10%;
+}
