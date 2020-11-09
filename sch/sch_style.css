@@ -87,6 +87,7 @@ div {
 .content {
   width: 80%;
   height: auto;
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
   margin-right: auto;
@@ -96,7 +97,9 @@ div {
   background-color: rgba(219, 215, 215, 0.411);
   border-radius: 20px;
 }
-
-h2 {
-  text-align: center;
+h3 {
+  text-align: left;
+}
+p {
+  text-align: left;
 }
