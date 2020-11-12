@@ -81,19 +81,20 @@ div {
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 15px;
+  padding-bottom: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: auto;
 }
 .content {
   width: 80%;
-  height: auto;
+  height: 900px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  /* padding-left: 5%;
-  padding-right: 5%; */
+  margin-bottom: auto;
   background-color: rgba(219, 215, 215, 0.411);
   border-radius: 20px;
 }
