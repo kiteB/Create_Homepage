@@ -92,6 +92,13 @@ td {
   padding: 10px;
   border: 1px solid #333333;
 }
+thead {
+  font-weight: 700;
+  background-color: rgba(184, 224, 109, 0.356);
+}
+tbody {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 div {
   display: block;
 }
