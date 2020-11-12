@@ -95,9 +95,19 @@ div {
   background-color: rgba(219, 215, 215, 0.411);
   border-radius: 20px;
 }
+.wrap {
+  padding-top: 10px;
+}
 .button {
   background-color: white;
   border: 1px solid yellowgreen;
+  padding: 5px;
+  border-radius: 10%;
+}
+.button_random {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
   padding: 5px;
   border-radius: 10%;
 }

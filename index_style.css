@@ -99,8 +99,6 @@ div {
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .row {
   width: 70%;
@@ -121,9 +119,7 @@ div {
 .container {
   width: 970px;
   padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 50px;
 }
 .container::before {
   display: table;
@@ -132,12 +128,8 @@ div {
 .container::after {
   clear: both;
 }
-.main_icon {
-  background: cyan;
-  height: 100%;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.main-link-wrap {
+  position: absolute;
+  top: 240px;
+  right: 500px;
 }
