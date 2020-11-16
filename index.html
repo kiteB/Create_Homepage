@@ -7,6 +7,47 @@
     <meta name="순정" content="user-scalable=no, initial-scale=1" />
     <!-- CSS 파일-->
     <link rel="stylesheet" href="index_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#homepage").hover(
+          function () {
+            $(this).css({
+              color: "red",
+            });
+          },
+          function () {
+            $(this).css({
+              color: "black",
+            });
+          }
+        );
+        $("#portal").hover(
+          function () {
+            $(this).css({
+              color: "red",
+            });
+          },
+          function () {
+            $(this).css({
+              color: "black",
+            });
+          }
+        );
+        $("#LMS").hover(
+          function () {
+            $(this).css({
+              color: "red",
+            });
+          },
+          function () {
+            $(this).css({
+              color: "black",
+            });
+          }
+        );
+      });
+    </script>
   </head>
 
   <body>
@@ -113,19 +154,21 @@
                   <br />
                   <ul>
                     <li>
-                      <a href="https://homepage.sch.ac.kr/sch/index.jsp"
+                      <a
+                        href="https://homepage.sch.ac.kr/sch/index.jsp"
+                        id="homepage"
                         >순천향대학교 홈페이지</a
                       >
                     </li>
                     <br />
                     <li>
-                      <a href="https://portal.sch.ac.kr/p/index.jsp"
+                      <a href="https://portal.sch.ac.kr/p/index.jsp" id="portal"
                         >순천향대학교 portal</a
                       >
                     </li>
                     <br />
                     <li>
-                      <a href="https://cyber.sch.ac.kr/ko/"
+                      <a href="https://cyber.sch.ac.kr/ko/" id="LMS"
                         >순천향대학교 학습플랫폼(LMS)</a
                       >
                     </li>
