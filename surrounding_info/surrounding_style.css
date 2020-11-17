@@ -87,7 +87,6 @@ div {
 .content {
   width: 80%;
   height: auto;
-  text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
   margin-right: auto;
@@ -108,4 +107,7 @@ div {
   border: 1px solid red;
   color: red;
   padding: 5px;
+}
+h2 {
+  text-align: center;
 }
