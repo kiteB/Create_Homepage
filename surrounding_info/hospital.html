@@ -7,6 +7,31 @@
     <meta name="순정" content="user-scalable=no, initial-scale=1" />
     <!-- CSS 파일-->
     <link rel="stylesheet" href="surrounding_style.css" />
+    <style>
+      .list {
+        width: 600px;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      summary {
+        font-weight: bold;
+      }
+      details {
+        padding-bottom: 3%;
+      }
+      details a {
+        color: blue;
+      }
+      summary {
+        cursor: pointer;
+        text-align: left;
+        font-size: large;
+      }
+      .kind h2 {
+        text-align: left;
+        padding-left: 5%;
+      }
+    </style>
   </head>
 
   <body>
@@ -70,6 +95,61 @@
           <div class="wrap">
             <a href="#" class="button">병원</a>
             <a href="#" class="button">약국</a>
+          </div>
+          <div class="kind">
+            <h2>1. 병원</h2>
+            <div class="list">
+              <details>
+                <summary>삼성바른의원</summary>
+                <p>Tel. 041-547-3848</p>
+                <p>주소 | 충남 아산시 신창면 온천대로 831</p>
+                <p>
+                  영업 시간 | 평일 09:00 - 19:00, 토요일 09:00 - 15:00,
+                  <span style="color: red" ;>일요일, 공휴일 휴무</span>
+                </p>
+                <a
+                  href="https://map.naver.com/v5/search/%EC%82%BC%EC%84%B1%EB%B0%94%EB%A5%B8%EC%9D%98%EC%9B%90/place/37357549?placeSearchOption=fromNxList=true%26noredirect=1%26entry=pll&c=14125085.0956738,4409441.9599440,12,0,0,0,dh&placePath=%2Fhome%3Fentry=pll"
+                  >네이버 지도 바로가기</a
+                >
+              </details>
+              <details>
+                <summary>우리 한의원</summary>
+                <p>Tel. 041-543-1131</p>
+                <p>주소 | 충남 아산시 신창면 온천대로 831</p>
+                <p>
+                  영업 시간 | 평일 09:30 - 18:00,
+                  <span style="color: red" ;>주말, 공휴일 휴무</span>
+                </p>
+                <a
+                  href="https://map.naver.com/v5/search/%EC%9A%B0%EB%A6%AC%20%ED%95%9C%EC%9D%98%EC%9B%90/place/21019285?placeSearchOption=fromNxList=true%26noredirect=1%26entry=pll&c=14126451.4075544,4408419.6146907,13,0,0,0,dh&placePath=%2Fhome%3Fentry=pll"
+                  >네이버 지도 바로가기</a
+                >
+              </details>
+            </div>
+          </div>
+          <div class="kind">
+            <h2>2. 약국</h2>
+            <div class="list">
+              <details>
+                <summary>대학로 약국</summary>
+                <p>Tel. 041-544-3433</p>
+                <p>주소 | 충남 아산시 신창면 순천향로 5</p>
+                <a
+                  href="https://map.naver.com/v5/search/%EC%8B%A0%EC%B0%BD%EB%A9%B4%20%EC%95%BD%EA%B5%AD/place/353892547?placeSearchOption=fromNxList=true%26noredirect=1%26entry=pll&c=14126327.1973834,4408066.0934349,13,0,0,0,dh&placePath=%2Fhome%3Fentry=pll"
+                  >네이버 지도 바로가기</a
+                >
+              </details>
+              <details>
+                <summary>서울온누리약국</summary>
+                <p>Tel. 041-547-8873</p>
+                <p>주소 | 충남 아산시 신창면 온천대로 831</p>
+                <p>영업 시간 | 평일 08:30 - 22:00</p>
+                <a
+                  href="https://map.naver.com/v5/search/%EC%84%9C%EC%9A%B8%EC%98%A8%EB%88%84%EB%A6%AC%EC%95%BD%EA%B5%AD?c=14143352.6847387,4509588.5853113,15,0,0,0,dh"
+                  >네이버 지도 바로가기</a
+                >
+              </details>
+            </div>
           </div>
         </div>
       </div>
