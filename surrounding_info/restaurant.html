@@ -26,7 +26,9 @@
           return a[Math.floor(Math.random() * a.length)];
         }
       }
+      $("html, body").stop().animate({ scrollTop: 0 }, 1000);
     </script>
+
     <style>
       .list {
         width: 600px;
@@ -917,6 +919,14 @@
                 >
               </details>
             </div>
+          </div>
+          <div class="Top">
+            <button
+              type="button"
+              onclick="$('html, body').stop().animate( { scrollTop : 0 } ); "
+            >
+              Top
+            </button>
           </div>
         </div>
       </div>

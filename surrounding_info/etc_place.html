@@ -5,6 +5,7 @@
     <title>순정</title>
     <!-- viewport 설정 -->
     <meta name="순정" content="user-scalable=no, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- CSS 파일-->
     <link rel="stylesheet" href="surrounding_style.css" />
     <style>
@@ -270,6 +271,14 @@
                 >
               </details>
             </div>
+          </div>
+          <div class="Top">
+            <button
+              type="button"
+              onclick="$('html, body').stop().animate( { scrollTop : 0 } ); "
+            >
+              Top
+            </button>
           </div>
         </div>
       </div>
