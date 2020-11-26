@@ -125,7 +125,11 @@ tbody {
 .main-icon {
   width: 30%;
   float: right;
-  padding-right: 50px;
+  padding-right: 10%;
+}
+#calendar {
+  text-align: center;
+  padding-right: 10%;
 }
 @media screen and (max-width: 767px) {
   body {
