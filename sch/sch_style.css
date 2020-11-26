@@ -81,25 +81,44 @@ div {
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 15px;
-  padding-bottom: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: auto;
 }
 .content {
-  width: 80%;
+  width: 70%;
+  height: 100px;
+  padding-bottom: 10%;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: auto;
   background-color: rgba(219, 215, 215, 0.411);
   border-radius: 20px;
+  display: table;
 }
 h3 {
   text-align: left;
 }
 p {
   text-align: left;
+}
+h2 {
+  padding-top: 30px;
+}
+.list {
+  width: 50%;
+  float: left;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: table-cell;
+}
+summary {
+  cursor: pointer;
+  text-align: left;
+  font-size: large;
+}
+#map {
+  float: right;
+  width: 30%;
+  padding-top: 3%;
+  padding-right: 5%;
 }
