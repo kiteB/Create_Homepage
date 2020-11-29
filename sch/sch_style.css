@@ -106,9 +106,9 @@ h2 {
 .list {
   width: 50%;
   float: left;
-  padding-top: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   display: table-cell;
 }
 summary {
@@ -119,6 +119,20 @@ summary {
 #map {
   float: right;
   width: 30%;
-  padding-top: 3%;
-  padding-right: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: auto;
+  }
+  #map {
+    width: auto;
+    float: none;
+  }
+  .list {
+    width: auto;
+    float: none;
+  }
 }

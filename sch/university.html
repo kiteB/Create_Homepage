@@ -8,10 +8,12 @@
     <!-- CSS 파일-->
     <link rel="stylesheet" href="sch_style.css" />
     <style>
-      table {
+      .table {
         border: 1px solid #444444;
         border-collapse: collapse;
-        margin-left: 10%;
+        float: left;
+        width: 40%;
+        margin-left: 5%;
         margin-top: 5%;
       }
       th {
@@ -30,9 +32,23 @@
         background-color: rgba(255, 255, 255, 0.7);
       }
       #mark {
-        position: absolute;
-        top: 400px;
-        right: 300px;
+        float: right;
+        width: 25%;
+        padding-top: 5%;
+        padding-right: 5%;
+      }
+      @media screen and (max-width: 767px) {
+        body {
+          width: auto;
+        }
+        .table {
+          width: auto;
+          float: none;
+        }
+        #mark {
+          width: auto;
+          float: none;
+        }
       }
     </style>
   </head>
