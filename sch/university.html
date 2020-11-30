@@ -8,6 +8,10 @@
     <!-- CSS 파일-->
     <link rel="stylesheet" href="sch_style.css" />
     <style>
+      .sch {
+        width: auto;
+        height: auto;
+      }
       .table {
         border: 1px solid #444444;
         border-collapse: collapse;
@@ -37,6 +41,10 @@
         padding-top: 5%;
         padding-right: 5%;
       }
+      .department {
+        margin-left: 5%;
+        margin-top: 5%;
+      }
       @media screen and (max-width: 767px) {
         body {
           width: auto;
@@ -46,6 +54,10 @@
           float: none;
         }
         #mark {
+          width: auto;
+          float: none;
+        }
+        .department {
           width: auto;
           float: none;
         }
@@ -110,38 +122,57 @@
       <!-- main_container-->
       <div class="main_container">
         <div class="content">
-          <h2>학교 정보</h2>
-          <table class="table">
-            <tr>
-              <td>건학 이념</td>
-              <td>인간 사랑</td>
-            </tr>
-            <tr>
-              <td>분류</td>
-              <td>사립대학</td>
-            </tr>
-            <tr>
-              <td>개교일자</td>
-              <td>1987년 1월 순천향의과대학</td>
-            </tr>
-            <tr>
-              <td>총장</td>
-              <td>제 7대 의학박사 서교일</td>
-            </tr>
-            <tr>
-              <td>소재</td>
-              <td>충청남도 아산시 신창면 순천향로 22</td>
-            </tr>
-            <tr>
-              <td>상징동물</td>
-              <td>피닉스</td>
-            </tr>
-            <tr>
-              <td>교색</td>
-              <td>연두, 청록, 하늘</td>
-            </tr>
-          </table>
-          <img id="mark" src="sch_mark.PNG" />
+          <div class="sch">
+            <h2>학교 정보</h2>
+            <table class="table">
+              <tr>
+                <td>건학 이념</td>
+                <td>인간 사랑</td>
+              </tr>
+              <tr>
+                <td>분류</td>
+                <td>사립대학</td>
+              </tr>
+              <tr>
+                <td>개교일자</td>
+                <td>1987년 1월 순천향의과대학</td>
+              </tr>
+              <tr>
+                <td>총장</td>
+                <td>제 7대 의학박사 서교일</td>
+              </tr>
+              <tr>
+                <td>소재</td>
+                <td>충청남도 아산시 신창면 순천향로 22</td>
+              </tr>
+              <tr>
+                <td>상징동물</td>
+                <td>피닉스</td>
+              </tr>
+              <tr>
+                <td>교색</td>
+                <td>연두, 청록, 하늘</td>
+              </tr>
+            </table>
+            <img id="mark" src="sch_mark.PNG" />
+          </div>
+          <div class="department">
+            <details>
+              <summary>1. 향설나눔대학</summary>
+              <p>글로벌자유전공학과</p>
+              <p>
+                SCH미디어랩스 - 교육부 핵심 이공계 역량 강화 사업인 PRIME 사업을
+                위하여 2016학년도부터 신설된 단과대학이나 2016학년도에는
+                단과대학만 우선 신설한 후, 2017학년도부터 각 학과에 대한
+                신입생을 모집한다.
+              </p>
+              <p>
+                한국문화콘텐츠학과 영미학과 중국학과 건축학과(5)
+                미디어커뮤니케이션학과 디지털애니메이션학과 빅데이터공학과
+                사물인터넷학과 스마트자동차학과 에너지시스템학과 공연영상학과
+              </p>
+            </details>
+          </div>
         </div>
       </div>
     </div>

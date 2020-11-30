@@ -122,7 +122,6 @@ summary {
   margin-top: 5%;
   margin-right: 5%;
 }
-
 @media screen and (max-width: 767px) {
   body {
     width: auto;
@@ -132,6 +131,10 @@ summary {
     float: none;
   }
   .list {
+    width: auto;
+    float: none;
+  }
+  .department {
     width: auto;
     float: none;
   }
