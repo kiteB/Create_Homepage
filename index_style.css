@@ -113,6 +113,9 @@ tbody {
   border-radius: 20px;
   display: table;
 }
+#calendar {
+  padding-top: 15px;
+}
 .calendar {
   width: 45%;
   height: auto;
