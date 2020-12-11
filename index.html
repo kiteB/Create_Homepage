@@ -8,6 +8,31 @@
     <!-- CSS 파일-->
     <link rel="stylesheet" href="index_style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      div.item:nth-child(3) {
+        background: burlywood;
+      }
+      .slider {
+        position: relative;
+        float: center;
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 20%;
+      }
+      .button {
+        text-align: center;
+        padding-top: 3%;
+      }
+      .slider #img1 {
+        width: 100%;
+        height: 100%;
+      }
+      .slider #img2 {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
     <script>
       $(document).ready(function () {
         $("#homepage").hover(
@@ -46,6 +71,62 @@
             });
           }
         );
+      });
+
+      $(document).ready(function () {
+        // 변수 선언
+        var width = $('[data-role="slider"]').attr("data-width");
+        var height = $('[data-role="slider"]').attr("data-height");
+        var count = $('[data-role="slider"] div.item').length;
+
+        // 스타일 적용
+        $('[data-role="slider"]')
+          .css({
+            position: "relative",
+            overflow: "hidden",
+            width: width,
+            height: height,
+          })
+          .find(".container")
+          .css({
+            position: "absolute",
+            width: count * width,
+            overflow: "hidden",
+          })
+          .find(".item")
+          .css({
+            width: width,
+            height: height,
+            float: "left",
+          });
+
+        // 변수 선언
+        var currentPage = 0;
+        var changePage = function () {
+          $('[data-role="slider"] > .container').animate(
+            {
+              left: -currentPage * width,
+            },
+            500
+          );
+        };
+
+        // 이벤트 연결
+        $("#left-button").click(function () {
+          if (currentPage > 0) {
+            // 왼쪽으로 이동
+            currentPage = currentPage - 1;
+            changePage();
+          }
+        });
+
+        $("#right-button").click(function () {
+          if (currentPage < count - 1) {
+            // 오른쪽으로 이동
+            currentPage = currentPage + 1;
+            changePage();
+          }
+        });
       });
     </script>
   </head>
@@ -108,6 +189,31 @@
       <div class="main_container">
         <div class="row">
           <div class="content">
+            <h2>Welcome SCH!</h2>
+            <p>: 아래의 버튼을 이용해서 좌우로 넘겨보세요.</p>
+            <div class="slider">
+              <div data-role="slider" data-width="700" data-height="350">
+                <div class="container">
+                  <div class="item">
+                    <img src="sch1.jpg" id="img1" />
+                  </div>
+                  <div class="item">
+                    <img src="COVID-19.png" id="img2" />
+                  </div>
+                  <div class="item">
+                    <h1>Test</h1>
+                    <p>TEST</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <button id="left-button">←</button>
+              <button id="right-button">→</button>
+            </div>
+            <br />
+            <br />
+            <hr />
             <div class="calendar">
               <h2 id="calendar">12월 학사 일정</h2>
               <table>
