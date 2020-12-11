@@ -82,7 +82,7 @@ table {
   border: 1px solid #444444;
   border-collapse: collapse;
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 20%;
 }
 th {
   padding: 10px;
@@ -115,6 +115,7 @@ tbody {
 }
 #calendar {
   padding-top: 15px;
+  padding-left: 10%;
 }
 .calendar {
   width: 45%;
@@ -127,7 +128,7 @@ tbody {
 .main-icon {
   width: 25%;
   float: right;
-  padding-right: 10%;
+  padding-right: 15%;
 }
 .content h2 {
   padding-top: 3%;

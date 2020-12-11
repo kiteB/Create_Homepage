@@ -9,28 +9,25 @@
     <link rel="stylesheet" href="index_style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-      div.item:nth-child(3) {
-        background: burlywood;
-      }
       .slider {
         position: relative;
         float: center;
         text-align: center;
-        padding-top: 30px;
-        padding-left: 20%;
-      }
-      .button {
-        text-align: center;
-        padding-top: 3%;
+        padding-left: 17%;
       }
       .slider #img1 {
-        width: 100%;
-        height: 100%;
-      }
-      .slider #img2 {
         width: 50%;
         height: 100%;
         overflow: hidden;
+      }
+      .slider #img2 {
+        width: 80%;
+        height: 80%;
+        padding-top: 5%;
+      }
+      .container {
+        text-align: center;
+        margin: 0 auto;
       }
     </style>
     <script>
@@ -190,30 +187,34 @@
         <div class="row">
           <div class="content">
             <h2>Welcome SCH!</h2>
-            <p>: 아래의 버튼을 이용해서 좌우로 넘겨보세요.</p>
+            <p>
+              아래 이미지를 클릭하면 사이트로 이동합니다.
+              <br />버튼을 이용해 페이지를 넘겨보세요!
+            </p>
             <div class="slider">
-              <div data-role="slider" data-width="700" data-height="350">
+              <div data-role="slider" data-width="700" data-height="400">
                 <div class="container">
                   <div class="item">
-                    <img src="sch1.jpg" id="img1" />
+                    <a href="https://homepage.sch.ac.kr/sch/06/06050000.jsp">
+                      <img src="COVID-19.png" id="img1" />
+                    </a>
                   </div>
                   <div class="item">
-                    <img src="COVID-19.png" id="img2" />
-                  </div>
-                  <div class="item">
-                    <h1>Test</h1>
-                    <p>TEST</p>
+                    <a
+                      href="https://www.youtube.com/watch?v=5UWBfHLMJe4&feature=youtu.be"
+                    >
+                      <img src="img2.png" id="img2" />
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="button">
-              <button id="left-button">←</button>
-              <button id="right-button">→</button>
-            </div>
             <br />
-            <br />
-            <hr />
+            <button id="left-button">←</button>
+            <button id="right-button">→</button>
+          </div>
+
+          <div class="content2">
             <div class="calendar">
               <h2 id="calendar">12월 학사 일정</h2>
               <table>
