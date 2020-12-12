@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원 가입</title>
+    <meta name="순정" content="user-scalable=no, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        display: block;
+        font-family: 나눔스퀘어;
+        text-align: center;
+        background-color: rgba(219, 215, 215, 0.411);
+      }
+      #join {
+        text-align: left;
+        padding-top: 3%;
+      }
+      h1 {
+        padding-top: 5%;
+      }
+      table {
+        background-color: white;
+        float: center;
+      }
+      td,
+      tr {
+        padding: 10px;
+      }
+    </style>
+    <script>
+      function validate() {
+        var re = /^[a-zA-Z0-9]{4,12}$/; // 아이디와 패스워드가 적합한지 검사할 정규식
+        var re2 = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+        // 이메일이 적합한지 검사할 정규식
+
+        var id = document.getElementById("uid");
+        var pw = document.getElementById("upw");
+        var email = document.getElementById("uemail");
+        var num1 = document.getElementById("unum1");
+        var num2 = document.getElementById("unum2");
+
+        // 검사
+        if (!check(re, id, "아이디는 4~12자의 영문 대소문자와 숫자로만 입력")) {
+          return false;
+        }
+
+        if (
+          !check(re, pw, "패스워드는 4~12자의 영문 대소문자와 숫자로만 입력")
+        ) {
+          return false;
+        }
+
+        if (join.upw.value != join.checkupw.value) {
+          alert("비밀번호가 다릅니다. 다시 확인해 주세요.");
+          join.checkupw.value = "";
+          join.checkupw.focus();
+          return false;
+        }
+
+        if (email.value == "") {
+          alert("이메일을 입력해 주세요");
+          email.focus();
+          return false;
+        }
+
+        if (!check(re2, email, "적합하지 않은 이메일 형식입니다.")) {
+          return false;
+        }
+
+        if (join.uname.value == "") {
+          alert("이름을 입력해 주세요");
+          join.uname.focus();
+          return false;
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>회원가입</h1>
+    <div id="join">
+      <form
+        name="join"
+        onsubmit="return validate();"
+        method="post"
+        action="MAILTO:snoopingh@naver.com"
+        enctype="text/plain"
+      >
+        <br />
+        <table border="1" align="center">
+          <tr>
+            <td colspan="2" align="center" bgcolor="#AFEEEE">
+              <b>회원 기본 정보</b>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"><b>아이디:</b></td>
+            <td>
+              <input type="text" name="uid" id="uid" size="20" maxlength="12" />
+              4~12자의 영문 대소문자와 숫자로만 입력
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"><b>비밀번호:</b></td>
+            <td>
+              <input
+                type="password"
+                name="upw"
+                id="upw"
+                size="21"
+                maxlength="12"
+              />4~12자의 영문 대소문자와 숫자로만 입력
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"><b>비밀번호확인:</b></td>
+            <td>
+              <input
+                type="password"
+                name="checkupw"
+                id="checkupw"
+                size="21"
+                maxlength="12"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"><b>이메일:</b></td>
+            <td>
+              <input type="text" name="umail" id="uemail" size="25" />
+              예) id@domain.com
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"><b>이름:</b></td>
+            <td>
+              <input type="text" name="uname" id="uname" size="25" />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <p align="center">
+          <input type="submit" name="submit" value="회원 가입" />
+          <input type="reset" name="reset" value="다시 입력" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
